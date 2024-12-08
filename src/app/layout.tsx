@@ -1,6 +1,15 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import {Inter} from "next/font/google"
 import "./globals.css";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
+
+const inter = Inter({
+  subsets: ['latin'], 
+  weight: ['400', '600', '700'],
+  variable: "--font-inter"
+})
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,9 +35,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${inter.className} antialiased`}
       >
+        <Navigation/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
