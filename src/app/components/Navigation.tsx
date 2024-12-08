@@ -116,7 +116,7 @@ const Navigation = () => {
         <div className="h-[74px] justify-between items-center px-[300px] flex">
           <ul className="flex gap-8 text-[14px] font-inter leading-[110%] ">
             <li className="text-[#007580]">
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li className="hover:text-[#007580]">
               <Link href="">Shop</Link>
