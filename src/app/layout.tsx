@@ -16,6 +16,11 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+const helvetica = localFont({
+  src: "./fonts/Helvetica.ttf",
+  variable: "--font-helvetica",
+  weight: "100 900",
+});
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
@@ -35,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${inter.className} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${helvetica.variable} ${inter.className} antialiased`}
       >
         <Navigation/>
         {children}

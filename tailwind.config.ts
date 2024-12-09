@@ -13,7 +13,8 @@ export default {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        inter: "var(--font-inter)"
+        inter: "var(--font-inter)",
+        helvetica: "var(--font-helvetica)"
       }
     },
   },

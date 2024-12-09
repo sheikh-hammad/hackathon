@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .responsive-padding {
+      padding-left: clamp(16px, 15vw, 300px);
+      padding-right: clamp(16px, 15vw, 300px);
+    }
+  }
