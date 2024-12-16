@@ -7,7 +7,6 @@ export default function Home() {
           <h2 className="text-[60px] leading-[110%] font-bold text-[#272343]">Best Furniture Collection for your interior.</h2>
         </div>
         <div>
-          <img src="../asset/Product Image.png" alt="" />
         </div>
       </header>
     </>
