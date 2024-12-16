@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import ProductCard from "../components/ui/ProductCard";
 
 const page = () => {
   return (
