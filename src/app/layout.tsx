@@ -1,31 +1,40 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import {Inter} from "next/font/google"
+import { Inter, Roboto, Open_Sans, Poppins } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 
 const inter = Inter({
-  subsets: ['latin'], 
-  weight: ['400', '600', '700'],
-  variable: "--font-inter"
-})
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-inter",
 });
+
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-openSans",
+});
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["100", "300", "500", "700", "900"],
+  variable: "--font-roboto",
+});
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "500", "700", "900"],
+  variable: "--font-poppins",
+});
+
+
 const helvetica = localFont({
   src: "./fonts/Helvetica.ttf",
   variable: "--font-helvetica",
   weight: "100 900",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -40,11 +49,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${helvetica.variable} ${inter.className} antialiased`}
+        className={` ${helvetica.variable} ${inter.className} ${roboto.variable} ${openSans.variable} ${poppins.variable} antialiased`}
       >
-        <Navigation/>
+        <Navigation />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );

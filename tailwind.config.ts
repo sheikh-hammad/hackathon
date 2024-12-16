@@ -14,7 +14,21 @@ export default {
       },
       fontFamily: {
         inter: "var(--font-inter)",
-        helvetica: "var(--font-helvetica)"
+        helvetica: "var(--font-helvetica)",
+        roboto: "var(--font-roboto)",
+        openSans: "var(--font-openSans)",
+        poppins: "var(--font-poppins)"
+      },
+      letterSpacing: {
+        'custom-percentage': '12%'
+      },
+      screens: {
+        '3xl': '1920px',
+        'xs': '440px',
+      },
+      lineHeight: {
+        '120': '1.2',
+        '130': '1.3'
       }
     },
   },
