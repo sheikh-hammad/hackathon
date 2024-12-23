@@ -6,7 +6,7 @@ const SponsersLogos = () => {
   return (
     <div className="flex items-center gap-[106px] justify-between">
       {Logos.map((logo, index) => (
-        <div key={index}>
+        <div key={index} className="h-auto w-auto">
           <Image
             src={logo.img}
             alt=""

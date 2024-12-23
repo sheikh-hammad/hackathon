@@ -4,7 +4,7 @@ import { IoCartOutline } from "react-icons/io5";
 import { productProps } from "../data/types";
 import { Link } from "lucide-react";
 import { product } from "../data/types";
-const Product = ({
+export const Product = ({
   src,
   tag,
   name,
