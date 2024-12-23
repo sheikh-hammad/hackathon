@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: [ "400", "500", "600", "700"],
   variable: "--font-inter",
 });
 
@@ -19,12 +19,12 @@ const openSans = Open_Sans({
 
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["100", "300", "500", "700", "900"],
+  weight: ["100", "300","400" ,"500", "700", "900"],
   variable: "--font-roboto",
 });
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"],
+  weight: ["100", "300", "400", "500", "600", "700", "900"],
   variable: "--font-poppins",
 });
 
