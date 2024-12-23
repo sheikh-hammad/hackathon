@@ -1,5 +1,4 @@
 'use client'
-import React, { useState } from "react";
 import TopNav from "./ui/TopNav";
 import MiddleNav from "./ui/MiddleNav";
 import BottomNav from "./ui/BottomNav";

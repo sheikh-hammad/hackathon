@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import FaqHeading from "../components/ui/FaqHeading";
 import FaqComponent from "../components/ui/FaqComponent";

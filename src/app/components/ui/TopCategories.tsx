@@ -1,5 +1,6 @@
 import React from 'react'
 import { categories } from "../data/types";
+import Category from './Category';
 
 const TopCategories = () => {
   return (

@@ -1,6 +1,5 @@
 import React from "react";
 import Product from "./Product";
-import { product } from "../data/types"; // Import the product data
 
 const Products = () => {
   return (

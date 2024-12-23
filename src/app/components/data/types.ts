@@ -1,6 +1,4 @@
-import {
-    JSX
-} from "react/jsx-runtime";
+
 import {
     CiHeart
 } from "react-icons/ci";

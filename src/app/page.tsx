@@ -1,5 +1,4 @@
-import Product from "./components/ui/Product";
-import Category from "./components/ui/Category";
+
 import SponsersLogos from "./components/ui/SponsersLogos";
 import FeaturedProducts from "./components/ui/FeaturedProducts";
 import OurProducts from "./components/ui/OurProducts";

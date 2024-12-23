@@ -2,8 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { IoCartOutline } from "react-icons/io5";
 import { productProps } from "../data/types";
-import { Link } from "lucide-react";
-import { product } from "../data/types";
+
 export const Product = ({
   src,
   tag,
