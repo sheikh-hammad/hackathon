@@ -1,4 +1,3 @@
-
 import {
     CiHeart
 } from "react-icons/ci";
@@ -178,9 +177,9 @@ export const Faq: faqType[] = [{
 
 export type productProps = {
     src: string
-    name: string
+    name ? : string
     price ? : string
-    discountedPrice: string
+    discountedPrice ? : string
     tag ? : string
     tagClass ? : string
     cartClass ? : string
@@ -315,10 +314,24 @@ type CategoriesType = {
     products: string
 }
 
-export const categories: CategoriesType[] = [
-    {image: "/asset/Image (14).png", alt: "Chair", desc: "Wing Chair", products: "3,584 Products"},
-    {image: "/asset/Image (10).png", alt: "Chair", desc: "Wooden Chair", products: "157 Products"},
-    {image: "/asset/Image (17).png", alt: "Chair", desc: "Desk Chair", products: "3154 Products"},
+export const categories: CategoriesType[] = [{
+        image: "/asset/Image (14).png",
+        alt: "Chair",
+        desc: "Wing Chair",
+        products: "3,584 Products"
+    },
+    {
+        image: "/asset/Image (10).png",
+        alt: "Chair",
+        desc: "Wooden Chair",
+        products: "157 Products"
+    },
+    {
+        image: "/asset/Image (17).png",
+        alt: "Chair",
+        desc: "Desk Chair",
+        products: "3154 Products"
+    },
 ]
 
 export type ProductCard = {
@@ -327,3 +340,116 @@ export type ProductCard = {
     desc: string
     products: string
 }
+
+type ExplorerProductsTypes = {
+    src: string
+    alt: string
+    width: number
+    height: number
+}
+
+export const ExplorerProducts: ExplorerProductsTypes[] = [{
+        src: "/asset/Frame.png",
+        alt: "Image",
+        width: 643,
+        height: 643
+    },
+    {
+        src: "/asset/card (2).png",
+        alt: "Image",
+        width: 312,
+        height: 312
+    },
+    {
+        src: "/asset/card (4).png",
+        alt: "Image",
+        width: 312,
+        height: 312
+    }, {
+        src: "/asset/Image (14).png",
+        alt: "Image",
+        width: 312,
+        height: 312
+    }, {
+        src: "/asset/card (4).png",
+        alt: "Image",
+        width: 312,
+        height: 312
+    },
+
+]
+
+
+export const Prods = [{
+        id: 1,
+        src: "/asset/Image.png",
+        alt: "Image",
+        tag: "New",
+        name: "Library School Chair",
+        price: "$39",
+        discountedPrice: "$20",
+        tagClass: "bg-[#01AD5A]",
+        cartClass: "bg-[#029FAE] text-white",
+        nameClass: "text-[#007580]"
+    }, {
+        id: 2,
+        src: "/asset/Image (7).png",
+        alt: "Image",
+        tag: "Sales",
+        name: "Library School Chair",
+        price: "$39",
+        discountedPrice: "$20",
+        tagClass: "bg-[#F5813F]",
+        cartClass: "bg-[#F0F2F3]",
+        priceClass: "text-[#9A9CAA]",
+    },
+    {
+        id: 3,
+        src: "/asset/Image (8).png",
+        price: "$39",
+        name: "Library School Chair",
+        discountedPrice: "$20",
+        cartClass: "bg-[#F0F2F3]"
+    }, {
+        id: 4,
+        src: "/asset/Image (9).png",
+        name: "Library School Chair",
+        price: "$39",
+        discountedPrice: "$20",
+        cartClass: "bg-[#F0F2F3]",
+        nameClass: "text-[#272343]"
+    }, {
+        id: 5,
+        src: "/asset/Image (10).png",
+        tag: "New",
+        name: "Library School Chair",
+        discountedPrice: "$20",
+        cartClass: "bg-[#029FAE] text-white",
+        tagClass: "bg-[#01AD5A]",
+        nameClass: "text-[#272343]",
+    }, {
+        id: 6,
+        src: "/asset/Image (11).png",
+        tag: "Sales",
+        name: "Library School Chair",
+        price: "$39",
+        discountedPrice: "$20",
+        tagClass: "bg-[#F5813F]",
+        cartClass: "bg-[#F0F2F3]",
+        priceClass: "text-[#9A9CAA]",
+    }, {
+        id: 7,
+        src: "/asset/Image (12).png",
+        name: "Library School Chair",
+        discountedPrice: "$20",
+        cartClass: "bg-[#F0F2F3]",
+    },
+    {
+        id: 8,
+        src: "/asset/Image (13).png",
+        name: "Library School Chair",
+        discountedPrice: "$20",
+        cartClass: "bg-[#F0F2F3]",
+        nameClass: "text-[#272343]",
+    }
+]

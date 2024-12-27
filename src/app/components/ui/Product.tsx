@@ -4,6 +4,7 @@ import { IoCartOutline } from "react-icons/io5";
 import { productProps } from "../data/types";
 
 export const Product = ({
+  
   src,
   tag,
   name,
@@ -15,7 +16,7 @@ export const Product = ({
   nameClass,
 }: productProps) => {
   return (
-    <div className="flex flex-col gap-[14px]">
+    <div className="flex flex-col  gap-[14px]">
       <div className="relative">
         <Image
           src={src}
@@ -26,7 +27,7 @@ export const Product = ({
         />
         <div className="absolute top-5 left-5">
           <p
-            className={` text-[13px] font-medium leading-110  text-white py-[10px] px-[6px] rounded-[4px] ${tagClass} `}
+            className={` text-[13px] font-medium [line-height:110%]  text-white py-[6px] px-[10px] rounded-[4px] ${tagClass} `}
           >
             {tag}
           </p>
