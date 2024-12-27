@@ -1,7 +1,6 @@
 import SponsersLogos from "./components/ui/SponsersLogos";
 import FeaturedProducts from "./components/ui/FeaturedProducts";
 import OurProducts from "./components/ui/OurProducts";
-import Image from "next/image";
 import ExplorePopular from "./components/ui/ExplorePopular";
 import TopCategories from "./components/ui/TopCategories";
 import Hero from "./components/ui/Hero";
