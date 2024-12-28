@@ -4,18 +4,17 @@ import Image from "next/image";
 import { IoCartOutline } from "react-icons/io5";
 import FeatureComponent from "@/app/components/ui/FeatureComponent";
 
-
 export async function generateStaticParams() {
   return Prods.map((product) => ({
     id: product.id.toString(),
   }));
 }
 interface ProductPageProps {
-  params: { id: string };
+  params: { id: number };
 }
 
-export default function ProductPage({ params }:ProductPageProps) {
-  const product = Prods.find((prod) => prod.id === parseInt(params.id));
+export default function ProductPage({ params }: ProductPageProps) {
+  const product = Prods.find((prod) => prod.id === params.id);
 
   if (!product) {
     notFound();
@@ -61,7 +60,7 @@ export default function ProductPage({ params }:ProductPageProps) {
         </div>
       </div>
 
-    <FeatureComponent/>
+      <FeatureComponent />
     </div>
   );
 }
