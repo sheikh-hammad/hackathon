@@ -1,6 +1,7 @@
 import Product from "../ui/Product";
 import React from "react";
 import { Prods } from "../data/types";
+import Link from "next/link";
 
 const FeaturedProducts = () => {
   return (
@@ -11,7 +12,9 @@ const FeaturedProducts = () => {
         </p>
         <div className="flex gap-6">
           {Prods.slice(0, 4).map((product, index) => (
-            <Product key={index} {...product} />
+            <Link key={index} href={`/products/${product.id}`}>
+              <Product {...product} />
+            </Link>
           ))}
         </div>
       </div>

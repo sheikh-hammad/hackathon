@@ -219,30 +219,36 @@ export type ProdType = {
     img: string
     name: string
     price: string
+    id: number
 }
 
 export const Prod: ProdType[] = [{
+        id: 1,
         img: "/asset/Image (12).png",
         name: "Library Stool Chair",
         price: "$90"
 
     }, {
+        id: 2,
         img: "/asset/Image.png",
         name: "Library Stool Chair",
         price: "$90"
 
     },
     {
+        id: 3,
         img: "/asset/Image (17).png",
         name: "Library Stool Chair",
         price: "$90"
 
     },
     {
+        id: 4,
         img: "/asset/Image (8).png",
         name: "Library Stool Chair",
         price: "$90"
     }, {
+        id: 5,
         img: "/asset/Image (14).png",
         name: "Library Stool Chair",
         price: "$90"
@@ -315,7 +321,7 @@ type CategoriesType = {
 }
 
 export const categories: CategoriesType[] = [{
-        image: "/asset/Image (14).png",
+        image: "/asset/Image (2).png",
         alt: "Chair",
         desc: "Wing Chair",
         products: "3,584 Products"
@@ -427,6 +433,8 @@ export const Prods = [{
         cartClass: "bg-[#029FAE] text-white",
         tagClass: "bg-[#01AD5A]",
         nameClass: "text-[#272343]",
+        price: "$39",
+
     }, {
         id: 6,
         src: "/asset/Image (11).png",
@@ -441,6 +449,8 @@ export const Prods = [{
         id: 7,
         src: "/asset/Image (12).png",
         name: "Library School Chair",
+        price: "$39",
+
         discountedPrice: "$20",
         cartClass: "bg-[#F0F2F3]",
     },
@@ -449,7 +459,47 @@ export const Prods = [{
         src: "/asset/Image (13).png",
         name: "Library School Chair",
         discountedPrice: "$20",
+        price: "$39",
+
         cartClass: "bg-[#F0F2F3]",
         nameClass: "text-[#272343]",
+    }, {
+        id: 9,
+        src: "/asset/Image.png",
+        alt: "Image",
+        tag: "New",
+        name: "Library School Chair",
+        price: "$39",
+        discountedPrice: "$20",
+        tagClass: "bg-[#01AD5A]",
+        cartClass: "bg-[#029FAE] text-white",
+        nameClass: "text-[#007580]"
+    }, {
+        id: 10,
+        src: "/asset/Image (7).png",
+        alt: "Image",
+        tag: "Sales",
+        name: "Library School Chair",
+        price: "$39",
+        discountedPrice: "$20",
+        tagClass: "bg-[#F5813F]",
+        cartClass: "bg-[#F0F2F3]",
+        priceClass: "text-[#9A9CAA]",
+    },
+    {
+        id: 11,
+        src: "/asset/Image (8).png",
+        price: "$39",
+        name: "Library School Chair",
+        discountedPrice: "$20",
+        cartClass: "bg-[#F0F2F3]"
+    }, {
+        id: 12,
+        src: "/asset/Image (9).png",
+        name: "Library School Chair",
+        price: "$39",
+        discountedPrice: "$20",
+        cartClass: "bg-[#F0F2F3]",
+        nameClass: "text-[#272343]"
     }
 ]

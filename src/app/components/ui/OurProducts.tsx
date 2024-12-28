@@ -12,8 +12,8 @@ const OurProducts = () => {
             Our Products
           </p>
           <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-[84px]">
-            {Prods.map((product) => (
-              <Link key={product.id} href={`/product/${product.id}`}>
+            {Prods.slice(0, 8).map((product) => (
+              <Link key={product.id} href={`/products/${product.id}`}>
                 <Product {...product} />
               </Link>
             ))}

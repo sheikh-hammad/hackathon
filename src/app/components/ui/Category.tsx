@@ -6,9 +6,9 @@ import { ProductCard } from "../data/types";
 const Category = ({image, alt, desc, products}:ProductCard) => {
   return (
     <>
-      <div className="bg-[#F5F5F5] mt-7 mb-5" id="btn_div">
+      <div className=" mt-7 mb-5" id="btn_div">
         <div className="relative">
-          <Link href={"/404"}>
+          <Link href={"/"}>
             <Image
               className=" w-[424px]  rounded-[10px]"
               src={image}
@@ -16,11 +16,12 @@ const Category = ({image, alt, desc, products}:ProductCard) => {
               width={424}
               height={424}
             />
-          </Link>
           <div className="absolute bottom-0 p-5 opacity-70  bg-black flex flex-col gap-2  w-full rounded-b-[10px]">
             <p className="text-white font-semibold  text-[20px]">{desc}</p>
             <p className="text-[14px] font-normal leading-110 text-white opacity-70">{products}</p>
           </div>
+          </Link>
+
         </div>
       </div>
     </>
