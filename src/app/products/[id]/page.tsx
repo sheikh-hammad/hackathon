@@ -10,8 +10,11 @@ export async function generateStaticParams() {
     id: product.id.toString(),
   }));
 }
+interface ProductPageProps {
+  params: { id: string };
+}
 
-export default function ProductPage({ params }: { params: { id: string } }) {
+export default function ProductPage({ params }:ProductPageProps) {
   const product = Prods.find((prod) => prod.id === parseInt(params.id));
 
   if (!product) {
