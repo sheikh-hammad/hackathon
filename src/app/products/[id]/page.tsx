@@ -6,7 +6,7 @@ import FeatureComponent from "@/app/components/ui/FeatureComponent";
 
 export async function generateStaticParams() {
   return Prods.map((product) => ({
-    id: product.id.toString(),
+    id: product.id,
   }));
 }
 interface ProductPageProps {
