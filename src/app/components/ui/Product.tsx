@@ -22,8 +22,8 @@ export const Product = ({
           src={src}
           alt=""
           className="object-cover"
-          width={300}
-          height={300}
+          width={500}
+          height={500}
         />
         <div className="absolute top-5 left-5">
           <p

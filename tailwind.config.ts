@@ -61,6 +61,7 @@ export default {
             },
             screens: {
               '3xl': '1920px',
+              '2.5xl': '1800px',
               'xs': '440px',
             },
             lineHeight: {
