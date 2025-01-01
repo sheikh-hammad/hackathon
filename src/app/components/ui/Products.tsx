@@ -1,7 +1,6 @@
 import React from "react";
-import Product from "./Product"; // Import the ProductCard component
+import Product from "./Product"; 
 import { client } from "@/sanity/lib/client";
-import imageUrlBuilder from "@sanity/image-url";
 import Link from "next/link";
 import {Image} from "sanity"
 import { urlFor } from "@/sanity/lib/image";

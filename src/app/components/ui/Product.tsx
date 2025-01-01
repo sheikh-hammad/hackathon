@@ -2,9 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { IoCartOutline } from "react-icons/io5";
 import { productProps } from "../data/types";
-import { client } from "@/sanity/lib/client";
-import imageUrlBuilder from "@sanity/image-url";
-import Link from "next/link";
+
 
 // export const getProductData = async () => {
 //   const res = await client.fetch(`*[_type == "product"]`);
@@ -31,8 +29,6 @@ export function Product({
   name,
   price,
   discountedPrice,
-  tagClass = "",
-  cartClass = "",
   priceClass = "",
   nameClass,
 }: productProps) {
